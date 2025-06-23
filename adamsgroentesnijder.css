@@ -1,82 +1,84 @@
-/* General Page Styling */
-body {
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(to bottom, #f0f4f7, #e3ecf2);
-  color: #222;
-  margin: 2em;
-  text-align: center;
+/* Body & Container */
+body, .page-content {
+  background: linear-gradient(to bottom right, #f0f8ff, #e6f5f0);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
 }
 
+/* Title */
 h1 {
-  font-size: 2.2em;
-  color: #2c3e50;
-  margin-bottom: 1em;
+  font-size: 2.4em !important;
+  color: #2c3e50 !important;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-/* Switch / Button styling */
-.switch input[type="checkbox"] + label {
-  background-color: #ddd;
-  border-radius: 30px;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-  position: relative;
-  transition: background 0.3s;
-  margin: 0 auto;
+/* Switch Cards */
+.switch-card, .switch {
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05) !important;
+  padding: 12px !important;
+  margin-bottom: 12px !important;
 }
 
-.switch input[type="checkbox"] + label::after {
-  content: "";
-  background: white;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  transition: left 0.3s;
+/* Checkbox Switch Styling */
+.switch input[type="checkbox"] {
+  width: 22px !important;
+  height: 22px !important;
 }
 
-.switch input[type="checkbox"]:checked + label {
-  background-color: #2ecc71;
+/* Slider Cards */
+.number-card, .number {
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05) !important;
+  padding: 12px !important;
+  margin-bottom: 12px !important;
 }
 
-.switch input[type="checkbox"]:checked + label::after {
-  left: 33px;
+/* Range Slider Styling */
+input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 100% !important;
+  height: 6px !important;
+  background: #ddd !important;
+  border-radius: 3px !important;
+  margin-top: 8px !important;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 20px !important;
+  height: 20px !important;
+  background: #007acc !important;
+  border-radius: 50% !important;
+  border: 2px solid #005fa3 !important;
+  cursor: pointer !important;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 20px !important;
+  height: 20px !important;
+  background: #007acc !important;
+  border-radius: 50% !important;
+  border: 2px solid #005fa3 !important;
+  cursor: pointer !important;
 }
 
-/* Slider Styling */
-input[type=range] {
-  -webkit-appearance: none;
-  width: 80%;
-  margin: 20px 0;
-  height: 8px;
-  background: #ccc;
-  border-radius: 5px;
+/* Value Display */
+.number .value {
+  font-size: 1.1em !important;
+  color: #005fa3 !important;
 }
 
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #3498db;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid #2980b9;
+/* Button inside cards (if any) */
+button {
+  background: #007acc !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  cursor: pointer !important;
 }
-
-input[type=range]::-moz-range-thumb {
-  background: #3498db;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid #2980b9;
-}
-
-/* Numeric Input Label */
-label {
-  font-weight: 500;
-  display: block;
-  margin: 0.5em 0;
+button:hover {
+  background: #005fa3 !important;
 }
